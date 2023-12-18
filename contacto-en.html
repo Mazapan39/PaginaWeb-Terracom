@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Terracom-Contacto</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+        rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='main.js'></script>
+</head>
+</html>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/terracom_text.png">
+        </div>
+        <div class="nav">
+            <div class="topnav" id="myTopnav">
+                <a href="contacto-en.html" class="active">Contact</a>
+                <a href="index-en.html">Home</a> 
+                <a href="productos-en.html">Services & Products</a>
+                <a href="Kitdigital-en.html" >Digital Kit</a>
+                <a href="soporte-en.html">Support</a>
+                <a href="contacto.html">ES</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class='bx bx-menu'></i>
+                </a>
+              </div>
+        </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+    </header>
+      
+      <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+          var header = document.querySelector("header");
+          header.classList.toggle("abajo",window.scrollY>0);
+        })
+      </script>
+     <div class="formulario">
+      <form id="form" autocomplete="off">
+          <h2>Contact</h2>
+  
+          <div class="input-group">
+              <input id="name" type="text" name="name" placeholder="Nombre" required>
+              <input id="email" type="email" name="email" placeholder="Correo" required>
+              <textarea id="message" name="message" cols="30" rows="5" placeholder="Mensaje" required></textarea>
+              <div class="form-txt">
+                  <a href="https://politicadeprivacidadplantilla.com/">Politic privacity</a>
+                  <a href="https://www.evenses.es/terminos-y-condiciones?utm_source=bing&utm_medium=cpc&utm_campaign=Dynamisch%20%2F%2F%20es&utm_term=evenses&utm_content=Dynamisch">Términos y condiciones</a>
+              </div>
+              <input class="btn" type="submit" value="Enviar">
+          </div>
+      </form>
+      <a href="mailto:marc.zaragoza04@gmail.com" id="trucazo">mail</a>
+  </div>
+  <script>
+      const $form = document.querySelector('#form');
+      const $buttonMailto = document.querySelector('#trucazo');
+  
+      $form.addEventListener('submit', handleSubmit);
+  
+      function handleSubmit(event) {
+          event.preventDefault();
+  
+          // Validar que los campos requeridos estén completos
+          if ($form.checkValidity()) {
+              const form = new FormData(this);
+              $buttonMailto.setAttribute('href', `mailto:marc.zaragoza04@gmail.com?subject=${form.get('name - ')}${form.get('email')}&body=${form.get('message')}`);
+              $buttonMailto.click();
+          } else {
+              // Mostrar un mensaje de error o tomar otra acción aquí
+              alert("Please complete all required fields.");
+          }
+      }
+  </script>
+
+        <div class="texto">
+        <h2 class="contacto">Contact<span></span></h2>
+        <p>If you have any questions, problems or want to contribute something, contact us!</p>
+        <div class="flipflop">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img class=""src="img/reloj.png">
+                    <h2>schedule</h2>
+                </div>
+                <div class="flip-box-back">
+                  <h2>schedule</h2>
+                    <p>Lun/Jue: 8:30h - 18:00h</p>
+                    <p>Vie: 7:00h - 15:00h</p>
+                </div>
+                </div>
+            </div>
+           
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img class=""src="img/telefono.png">
+                    <h2>Direct Contact</h2>
+                </div>
+                <div class="flip-box-back">
+                  <h2>Direct Contact</h2>
+                    <p>Company Number: 654321321</p>
+                </div>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="estem">
+            <h4>Where we are</h4>
+            <p>We are in terrassa on the street - Carrer d'Ignasi Iglesias</p>
+            <p>08226 Terrassa Barcelona España</p>
+        </div>
+        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+            
+            <script>
+            (function () {
+            var setting = {"query":"Carrer Ignasi Iglesias, Terrassa, España","width":559,"height":165,"satellite":false,"zoom":16,"placeId":"EjpDYXJyZXIgZCdJZ25hc2kgSWdsZXNpYXMsIDA4MjI2IFRlcnJhc3NhLCBCYXJjZWxvbmEsIFNwYWluIi4qLAoUChIJm20uw9uSpBIRw2VPbq6hJ-QSFAoSCf27-iDokqQSEZgwx_LFMw2r","cid":"0xe427a1ae6e4f65c3","coords":[41.5699298,2.0217898],"lang":"es","queryString":"Carrer Ignasi Iglesias, Terrassa, España","centerCoord":[41.5699298,2.0217898],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"964963"};
+            var d = document;
+            var s = d.createElement('script');
+            s.src = 'https://1map.com/js/script-for-user.js?embed_id=964963';
+            s.async = true;
+            s.onload = function (e) {
+              window.OneMap.initMap(setting)
+            };
+            var to = d.getElementsByTagName('script')[0];
+            to.parentNode.insertBefore(s, to);
+          })();
+          </script>
+          
+
+          <a href="https://1map.com/es/map-embed">1 Map</a></div>
+
+          <footer>
+            <div class="foot">
+                <div class="links">
+                    <ul>
+                        <li><a href="index-en.html">Home</a></li>
+                        <li><a href="productos-en.html">Services & Products</a></li>
+                        <li><a href="soporte-en.html">Support</a></li>
+                        <li><a href="contacto-en.html">Contact</a></li>
+                    
+                    </ul>
+                </div>
+                <div class="footer_logo">
+                    <img src="img/terracom_text.png">
+                </div>
+            </div>
+            <div class="end">
+                <hr>
+                <p><a style="text-decoration: none; color: white;" href="https://www.cedro.org/propiedad-intelectual/legislacion/nacional#:~:text=Real%20Decreto-ley%2024%2F2021%2C%20de%202%20de%20noviembre%2C%20de,limpios%20y%20energ%C3%A9ticamente%20eficientes.%20%28pdf%20-%201207%20KB%29" target="_blank">Derechos reservados a @Terracom</a></p>
+            </div>
+        </footer>
+      <script>
+         AOS.init();
+      </script>
+</body>
+</html>
